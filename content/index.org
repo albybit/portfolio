@@ -1,19 +1,20 @@
-* my timeline
-** 2016-2020 University
+* whoami
+** my timeline
+*** 2016-2020 University
 earning a bachelor degree Computer Engineering at the Polythecnic of Turin, Italy
-*** after the degree I enrolled at the master degree in Cybersecurity, which is still on going
-** 2021-2022 Pandemic Times
+**** after the degree I enrolled at the master degree in Cybersecurity, which is still on going
+*** 2021-2022 Pandemic Times
 while still being enrolled at the university , I was hired by local authorities to help with the vaccination campaign and to enforce isolation procedures. This gave me the opportunity to develop a peculiar set of soft skills I used to deal with a large variety of people, often difficult, who were trying to unlawfully get either a vaccine or a discount on the isolation time.
-** 2022 - today
+*** 2022 - today
 working for an Italian institution as software developer and project manager, acting as a client on behalf of my employer.
 
 
-* currently carrying on:
-** small personal projects
+** currently carrying on:
+*** small personal projects
 with the objective to learn how to use telegram apis, develop extensions for firefox.
 ...
-** personal growth
+*** personal growth
 practcing ashtanga yoga and meditating.
-* favourite tech
-I like everything which is lowlevel. I am reviewing c++ and cybersecurity stuff for my university carreer. From now on I will keep this website updated, hopefully in a more precise way. I love discovering new things, for instance this website has been published with a simple push on a github repository through ghithub actions. I learned how to configure it just today. And it looks nice too, I hope. v2
+** favourite tech
+I like everything which is lowlevel. I am reviewing c++ and cybersecurity stuff for my university carreer. From now on I will keep this website updated, hopefully in a more precise way. I love discovering new things, for instance this website has been published with a simple push on a github repository through ghithub actions. I learned how to configure it just today. And it looks nice too, I hope.
 
