@@ -1,0 +1,1 @@
+In order to build this small pipeline I folowed https://www.youtube.com/watch?v=za99DwdZEyg the great tutorials of system crafters. The website should be published under https://albybit.github.io/portfolio/
