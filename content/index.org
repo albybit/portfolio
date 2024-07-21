@@ -15,4 +15,5 @@ with the objective to learn how to use telegram apis, develop extensions for fir
 ** personal growth
 practcing ashtanga yoga and meditating.
 * favourite tech
-I like everything which is lowlevel. I am reviewing c++ and cybersecurity stuff for my university carreer. From now on I will keep this website updated, hopefully in a more precise way. I love discovering new things, for instance this website has been published with a simple push on a github repository through ghithub actions. I learned how to configure it just today. And it looks nice too, I hope
+I like everything which is lowlevel. I am reviewing c++ and cybersecurity stuff for my university carreer. From now on I will keep this website updated, hopefully in a more precise way. I love discovering new things, for instance this website has been published with a simple push on a github repository through ghithub actions. I learned how to configure it just today. And it looks nice too, I hope. v2
+
