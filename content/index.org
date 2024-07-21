@@ -1,0 +1,21 @@
+* ciao
+
+come stai ?
+#+begin_src C
+    printf("hello");
+  int main(){
+    int a,bmc=0;
+    return -2;
+    }
+
+#+end_src
+
+*** c12
+1. printf'
+   2. ciao ciao
+      3.
+         4.
+
+
+# ciao come stai ?
+here is my [[./Emacs.org][emacs configuration]] 

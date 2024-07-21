@@ -1,0 +1,2 @@
+* this is the emacs configuration
+tell me the configuration
