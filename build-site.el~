@@ -1,2 +1,0 @@
-(require 'ox-publish)
-(message "build complete")
