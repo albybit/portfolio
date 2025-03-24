@@ -22,7 +22,7 @@ I am actively involved in small personal projects. I am trying to build a small 
 **** Lifelong Learning:
 I am dedicated to self-improvement both professionally and personally. Whether it's reviewing C++ or delving into cybersecurity topics for my academic career, I remain committed to growth and exploration.
 *** personal growth
-practcing ashtanga yoga and meditating, geopolitics, learning languages... more of personal interests here [[todo]]. I believe that personal growth activities are as vital as technical knowledge, and instrumental in nurturing core abilities, to listen attentively, reason effectively, communicate confidently and empathetically, embodying the philosophy that "all that you know finds expression in all that you do." 
+practcing ashtanga yoga and meditating, geopolitics, learning languages... more of personal interests here -- to do -- . I believe that personal growth activities are as vital as technical knowledge, and instrumental in nurturing core abilities, to listen attentively, reason effectively, communicate confidently and empathetically, embodying the philosophy that "all that you know finds expression in all that you do." 
 ** favourite tech
  I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with Org mode 9.3 on EXWM). I continuously enjoy learning and experimenting, even deploying my website with a simple push via GitHub Actions.
 
