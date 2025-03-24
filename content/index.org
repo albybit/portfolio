@@ -24,5 +24,5 @@ I am dedicated to self-improvement both professionally and personally. Whether i
 *** personal growth
 practcing ashtanga yoga and meditating.
 ** favourite tech
- I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with Org mode 9.3). I continuously enjoy learning and experimenting, even deploying my website with a simple push via GitHub Actions—a testament to my evolving proficiency with modern development workflows.
+ I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with Org mode 9.3). I continuously enjoy learning and experimenting, even deploying my website with a simple push via GitHub Actions.
 
