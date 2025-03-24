@@ -1,20 +1,28 @@
-* whoami
+* whoami ...?
+I invite you to explore my background, experiences, interests, and passions—allowing them to form a clear picture of who I am. Let the story unfold, dear reader.
+
 ** my timeline
 *** 2016-2020 University
-earning a bachelor degree Computer Engineering at the Polythecnic of Turin, Italy
-**** after the degree I enrolled at the master degree in Cybersecurity, which is still on going
+**** Bachelor’s Degree in Computer Engineering:
+I earned my Bachelor’s Degree from the Polytechnic of Turin, Italy, where I honed my skills in computing fundamentals and problem solving. 
+**** Master’s Degree in Cybersecurity:
+this program, still in progress, has been instrumental in deepening my understanding of network security, cryptography, and risk management.
 *** 2021-2022 Pandemic Times
-while still being enrolled at the university , I was hired by local authorities to help with the vaccination campaign and to enforce isolation procedures. This gave me the opportunity to develop a peculiar set of soft skills I used to deal with a large variety of people, often difficult, who were trying to unlawfully get either a vaccine or a discount on the isolation time.
+**** Frontline Contributions
+During the challenging period of the pandemic, while still enrolled at university, I was recruited by local authorities to support the vaccination campaign and enforce isolation procedures.
+***** Skill Development
+This experience was transformative—it sharpened my soft skills and taught me how to manage a wide range of situations, especially when dealing with individuals attempting to bypass protocols or exploit benefits (unlawfully getting a vaccine or a discount on isolation time).
 *** 2022 - today
-working for an Italian institution as software developer and project manager, acting as a client on behalf of my employer.
+I currently work for an Italian institution, where I balance dual responsibilities as a software developer and project manager. 
 
 
 ** currently carrying on:
 *** small personal projects
-with the objective to learn how to use telegram apis, develop extensions for firefox.
-...
+I am actively involved in small personal projects. I am trying to build a small crypto walelt for android
+**** Lifelong Learning:
+I am dedicated to self-improvement both professionally and personally. Whether it's reviewing C++ or delving into cybersecurity topics for my academic career, I remain committed to growth and exploration.
 *** personal growth
 practcing ashtanga yoga and meditating.
 ** favourite tech
-I like everything which is lowlevel. I am reviewing c++ and cybersecurity stuff for my university carreer. From now on I will keep this website updated, hopefully in a more precise way. I love discovering new things, for instance this website has been published with a simple push on a github repository through ghithub actions. I learned how to configure it just today. And it looks nice too, I hope.
+ I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with Org mode 9.3). I continuously enjoy learning and experimenting, even deploying my website with a simple push via GitHub Actions—a testament to my evolving proficiency with modern development workflows.
 
