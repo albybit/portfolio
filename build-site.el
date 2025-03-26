@@ -26,8 +26,10 @@
          function toggleTOC() {
            var toc = document.getElementById('table-of-contents');
            var content = document.getElementById('content');
+           var toggleBtn = document.getElementById('toggle-toc');
            toc.classList.toggle('hidden');
            content.classList.toggle('full-width');
+           toggleBtn.classList.toggle('hidden');
          }
        </script>")
 

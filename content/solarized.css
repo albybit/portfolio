@@ -1,58 +1,66 @@
-/* Clear previous imports */
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+html, body {
+    height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #073642;
-    color: #839496;
+    background-color: var(--base03);
+    color: var(--base0);
     line-height: 1.6;
     scroll-behavior: smooth;
 }
 
 #page-container {
     display: flex;
-    max-width: 1200px;
+    height: 100%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 #table-of-contents {
     width: 250px;
-    background-color: #002b36;
+    background-color: var(--base02);
     padding: 1em;
-    transition: all 0.3s ease;
-    border-right: 1pt solid #586e75;
+    border-right: 1px solid var(--base01);
     overflow-y: auto;
-    max-height: 100vh;
+    height: 100vh;
     position: sticky;
     top: 0;
+    transition: all 0.3s ease;
 }
 
 #table-of-contents.hidden {
     width: 0;
-    padding: 1em 0;
-    opacity: 0;
+    padding: 0;
+    border-right: none;
     overflow: hidden;
 }
 
-#table-of-contents button {
-    background-color: #073642;
-    color: #839496;
-    border: none;
-    padding: 0.5em;
-    margin-top: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#table-of-contents button:hover {
-    background-color: #2aa198;
-    color: #002b36;
+#table-of-contents h2 {
+    color: var(--yellow);
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--base01);
+    padding-bottom: 0.5em;
 }
 
 #table-of-contents ul {
@@ -65,98 +73,73 @@ html {
 }
 
 #table-of-contents a {
-    color: #b58900;
+    color: var(--base0);
     text-decoration: none;
     display: block;
     padding: 0.2em 0;
+    transition: color 0.3s ease;
 }
 
 #table-of-contents a:hover {
-    color: #2aa198;
+    color: var(--yellow);
 }
 
 #content {
     flex-grow: 1;
     padding: 2em;
-    background-color: #002b36;
-    transition: all 0.3s ease;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 #content.full-width {
-    max-width: 100%;
     width: 100%;
+    padding-left: 0;
 }
 
-body {
-    background-color: #002b36;
-    margin: 0;
-    color: #839496;
+#toggle-toc {
+    position: fixed;
+    left: 260px;
+    top: 10px;
+    z-index: 1000;
+    background-color: var(--base02);
+    color: var(--base0);
+    border: 1px solid var(--base01);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggle-toc.hidden {
+    left: 10px;
+}
+
+#toggle-toc:hover {
+    background-color: var(--base01);
+    color: var(--yellow);
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    line-height: 1.2;
-}
-
 h1 {
-    color: #d33682;
+    color: var(--magenta);
     font-size: 2.5em;
-    border-bottom: 2px solid #586e75;
+    border-bottom: 2px solid var(--base01);
     padding-bottom: 0.3em;
+    margin-bottom: 1em;
 }
 
 h2 {
-    color: #859900;
+    color: var(--green);
     font-size: 2em;
     margin-top: 1em;
 }
 
 h3 {
-    color: #268bd2;
+    color: var(--blue);
     font-size: 1.5em;
 }
 
 p {
     margin-bottom: 1em;
-}
-
-/* Code and Monospace */
-pre, code {
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    background-color: #073642;
-    color: #839496;
-    border: 1pt solid #586e75;
-    border-radius: 4px;
-    padding: 0.5em;
-    overflow-x: auto;
-}
-
-/* Links */
-a {
-    color: #b58900;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:visited {
-    color: #cb4b16;
-}
-
-a:hover {
-    color: #2aa198;
-    text-decoration: underline;
-}
-
-/* Lists */
-ul, ol {
-    margin-left: 2em;
-    margin-bottom: 1em;
-}
-
-ul li, ol li {
-    margin-bottom: 0.5em;
 }
 
 /* Responsive Design */
@@ -167,21 +150,20 @@ ul li, ol li {
     
     #table-of-contents {
         width: 100%;
+        height: auto;
         position: static;
-        max-height: none;
-    }
-    
-    #table-of-contents.hidden {
-        height: 0;
-        padding: 0;
     }
     
     #content {
-        width: 100%;
+        height: auto;
+    }
+    
+    #toggle-toc {
+        display: none;
     }
 }
 
-/* Subtle Animations */
+/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
