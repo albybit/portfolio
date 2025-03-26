@@ -47,26 +47,7 @@
              :with-creator t            ;; Include Emacs and Org versions in footer
              :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil
-             :html-preamble 
-             (lambda (info)
-               "Custom preamble"
-               (concat 
-                "<div id=\"page-container\">"
-                "<div id=\"table-of-contents\" class=\"hidden\">"
-                (org-html-toc info)
-                "<button onclick=\"toggleTOC()\">Toggle TOC</button>"
-                "</div>"
-                "<div id=\"content\">"
-                ))
-             :html-postamble 
-             (lambda (info)
-               "Custom postamble"
-               (concat 
-                "</div>"
-                "</div>"
-                ))
-       )
+             :time-stamp-file nil)
        
        (list "org-static"
              :base-directory "./content"
