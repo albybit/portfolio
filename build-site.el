@@ -1,5 +1,4 @@
-;; Set the package installation directory so that packages aren't stored in the
-;; ~/.emacs.d/elpa path.
+;; Set the package installation directory so that packages aren't stored in the ~/.emacs.d/elpa path.
 (require 'package)
 (setq package-user-dir (expand-file-name "./.packages"))
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -16,11 +15,18 @@
 ;; Load the publishing system
 (require 'ox-publish)
 
-;; Customize the HTML output
+;; Custom HTML export
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
-      org-html-head-include-default-style nil;; Use our own styles
-      org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"solarized.css\" />")
+      org-html-head-include-default-style nil ;; Use our own styles
+      org-html-head 
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"solarized.css\" />
+       <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+       <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">")
+
+;; Additional HTML export options
+(setq org-html-metadata-timestamp-format "%Y-%m-%d")
+(setq org-html-htmlize-output-type 'css)
 
 ;; Define the publishing project
 (setq org-publish-project-alist
@@ -32,19 +38,26 @@
              :publishing-directory "./public"
              :with-author nil           ;; Don't include author name
              :with-creator t            ;; Include Emacs and Org versions in footer
-             :with-toc nil                ;; Include a table of contents
+             :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil)
+             :time-stamp-file nil
+             :html-preamble 
+             (lambda (info)
+               "Custom preamble with navigation"
+               (concat 
+                "<nav>"
+                "<a href=\"index.html\">Home</a> | "
+                "<a href=\"#timeline\">Timeline</a> | "
+                "<a href=\"#tech\">Tech</a>"
+                "</nav>")))
        
-      (list "org-static"
- :base-directory "./content"
- :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
- :publishing-directory "./public"
- :recursive t
- :publishing-function 'org-publish-attachment
- ))
-
-      )    ;; Don't include time stamp in file
+       (list "org-static"
+             :base-directory "./content"
+             :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|ico"
+             :publishing-directory "./public"
+             :recursive t
+             :publishing-function 'org-publish-attachment)
+       ))
 
 ;; Generate the site output
 (org-publish-all t)
