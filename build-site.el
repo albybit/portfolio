@@ -22,7 +22,14 @@
       org-html-head 
       "<link rel=\"stylesheet\" type=\"text/css\" href=\"solarized.css\" />
        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-       <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">")
+       <script>
+         function toggleTOC() {
+           var toc = document.getElementById('table-of-contents');
+           var content = document.getElementById('content');
+           toc.classList.toggle('hidden');
+           content.classList.toggle('full-width');
+         }
+       </script>")
 
 ;; Additional HTML export options
 (setq org-html-metadata-timestamp-format "%Y-%m-%d")
@@ -43,13 +50,23 @@
              :time-stamp-file nil
              :html-preamble 
              (lambda (info)
-               "Custom preamble with navigation"
+               "Custom preamble"
                (concat 
-                "<nav>"
-                "<a href=\"index.html\">Home</a> | "
-                "<a href=\"#timeline\">Timeline</a> | "
-                "<a href=\"#tech\">Tech</a>"
-                "</nav>")))
+                "<div id=\"page-container\">"
+                "<div id=\"table-of-contents\" class=\"hidden\">"
+                (org-html-toc info)
+                "<button onclick=\"toggleTOC()\">Toggle TOC</button>"
+                "</div>"
+                "<div id=\"content\">"
+                ))
+             :html-postamble 
+             (lambda (info)
+               "Custom postamble"
+               (concat 
+                "</div>"
+                "</div>"
+                ))
+       )
        
        (list "org-static"
              :base-directory "./content"
