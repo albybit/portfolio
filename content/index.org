@@ -43,7 +43,7 @@ I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with
 "All that you know finds expression in all that you do."
 #+END_QUOTE
 
-* I have been traveling to...
+** I have been to...
 *** Europe (various countries)
 *** USA
 Chigago, Miami, New York, Wasghington, Houston
