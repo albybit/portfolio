@@ -27,12 +27,12 @@ I currently work for an Italian institution, balancing dual responsibilities as 
 - Exploring new programming paradigms and technologies
 
 ** Personal Development
-- Practicing Ashtanga Yoga
-- Meditation
-- Studying Geopolitics
-- Language Learning
-- Photography
-- Musician (piano player)
+  - Practicing Ashtanga Yoga
+  - Meditation
+  - Studying Geopolitics
+  - Language Learning
+  - Photography
+  - Musician (piano player)
 
 I believe that personal growth activities are as vital as technical knowledge, instrumental in nurturing core abilities to listen attentively, reason effectively, and communicate confidently and empathetically.
 
@@ -55,7 +55,7 @@ Chigago, Miami, New York, Wasghington, Houston
 
 
 
-**** my BTC address 
+*** my BTC address 
 bc1q4dk9xg4rtvhrdew0dxd3uhqny3xsk9nu5av2f8
 
 
