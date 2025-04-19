@@ -31,91 +31,15 @@ html, body {
 }
 
 #page-container {
-    display: flex;
     height: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-#table-of-contents {
-    width: 250px;
-    background-color: var(--base02);
-    padding: 1em;
-    border-right: 1px solid var(--base01);
-    overflow-y: auto;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    transition: all 0.3s ease;
-}
-
-#table-of-contents.hidden {
-    width: 0;
-    padding: 0;
-    border-right: none;
-    overflow: hidden;
-}
-
-#table-of-contents h2 {
-    color: var(--yellow);
-    margin-bottom: 1em;
-    border-bottom: 1px solid var(--base01);
-    padding-bottom: 0.5em;
-}
-
-#table-of-contents ul {
-    list-style-type: none;
-    margin-left: 0;
-}
-
-#table-of-contents ul ul {
-    margin-left: 1em;
-}
-
-#table-of-contents a {
-    color: var(--base0);
-    text-decoration: none;
-    display: block;
-    padding: 0.2em 0;
-    transition: color 0.3s ease;
-}
-
-#table-of-contents a:hover {
-    color: var(--yellow);
-}
-
 #content {
-    flex-grow: 1;
     padding: 2em;
     overflow-y: auto;
     height: 100vh;
-}
-
-#content.full-width {
-    width: 100%;
-    padding-left: 0;
-}
-
-#toggle-toc {
-    position: fixed;
-    left: 260px;
-    top: 10px;
-    z-index: 1000;
-    background-color: var(--base02);
-    color: var(--base0);
-    border: 1px solid var(--base01);
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#toggle-toc.hidden {
-    left: 10px;
-}
-
-#toggle-toc:hover {
-    background-color: var(--base01);
-    color: var(--yellow);
 }
 
 /* Typography */
@@ -144,22 +68,8 @@ p {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    #page-container {
-        flex-direction: column;
-    }
-    
-    #table-of-contents {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-    
     #content {
-        height: auto;
-    }
-    
-    #toggle-toc {
-        display: none;
+        padding: 1em;
     }
 }
 
