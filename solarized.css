@@ -1,9 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* solarized.css */
 :root {
     --base03: #002b36;
     --base02: #073642;
@@ -21,64 +16,111 @@
     --green: #859900;
 }
 
-html, body {
-    height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--base03);
+body {
+    font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    background: var(--base03);
     color: var(--base0);
-    line-height: 1.6;
-    scroll-behavior: smooth;
 }
 
-#page-container {
-    height: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-#content {
-    padding: 2em;
-    overflow-y: auto;
-    height: 100vh;
-}
-
-/* Typography */
 h1 {
     color: var(--magenta);
-    font-size: 2.5em;
-    border-bottom: 2px solid var(--base01);
-    padding-bottom: 0.3em;
-    margin-bottom: 1em;
+    font-size: 2.8rem;
+    margin: 3rem 0 1.5rem;
+    border-bottom: 3px solid var(--base01);
+    padding-bottom: 0.5rem;
 }
 
 h2 {
     color: var(--green);
-    font-size: 2em;
-    margin-top: 1em;
+    font-size: 2rem;
+    margin: 2.5rem 0 1rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid var(--cyan);
 }
 
 h3 {
     color: var(--blue);
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
 }
 
-p {
-    margin-bottom: 1em;
+ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    #content {
-        padding: 1em;
+li {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background: var(--base02);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--base02);
+    border-left: 4px solid var(--cyan);
+    font-style: italic;
+    border-radius: 4px;
+}
+
+/* Timeline items */
+h3 + p {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 1rem 0 2rem;
+}
+
+h3 + p::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--yellow);
+}
+
+/* Technical details section */
+h2 + p {
+    background: var(--base02);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+/* Travel section */
+h3 + h3 {
+    margin-top: 2.5rem;
+}
+
+/* Bitcoin address */
+p:has(+ p) {
+    font-family: monospace;
+    background: var(--base02);
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+        padding: 0 1rem;
     }
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-#content {
-    animation: fadeIn 0.5s ease-in;
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
 }
