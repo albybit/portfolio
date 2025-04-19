@@ -8,7 +8,7 @@ I invite you to explore my background, experiences, interests, and passions—al
 I earned my Bachelor's Degree from the Polytechnic of Turin, Italy, where I honed my skills in computing fundamentals and problem-solving.
 
 *** Master's Degree in Cybersecurity
-This program has been instrumental in deepening my understanding of network security, cryptography, and risk management. Currently in progress, it represents my commitment to continuous learning and specialization.
+This program has been instrumental in deepening my understanding of network security, cryptography, and risk management. Currently in progress.
 
 ** Pandemic Contributions (2021-2022)
 *** Frontline Support
@@ -37,17 +37,20 @@ I currently work for an Italian institution, balancing dual responsibilities as 
 I believe that personal growth activities are as vital as technical knowledge, instrumental in nurturing core abilities to listen attentively, reason effectively, and communicate confidently and empathetically.
 
 * Favorite Tech 
-I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with Org mode 9.3 on EXWM). I continuously enjoy learning and experimenting, even deploying my website with a simple push via GitHub Actions.
+I appreciate the elegance of tools like Emacs (currently running Emacs 27.1 with Org mode 9.3 on EXWM). I continuously enjoy learning and experimenting.
 
 #+BEGIN_QUOTE
 "All that you know finds expression in all that you do."
 #+END_QUOTE
 
 * I have been traveling to...
-*** Europe
+*** Europe (various countries)
 *** USA
 Chigago, Miami, New York, Wasghington, Houston
 
 #+BEGIN_QUOTE
 "Traveling means dissolving into the lives of others, emerging forever changed—or sometimes, not returning at all."
 #+END_QUOTE
+
+
+
