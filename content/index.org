@@ -53,7 +53,7 @@ Chigago, Miami, New York, Wasghington, Houston
 #+END_QUOTE
 
 
-
+[download]({{ site.baseurl }}{% ./app-release.apk %})
 
 *** my BTC address 
 bc1q4dk9xg4rtvhrdew0dxd3uhqny3xsk9nu5av2f8
