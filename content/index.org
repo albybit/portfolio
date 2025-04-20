@@ -52,8 +52,9 @@ Chigago, Miami, New York, Wasghington, Houston
 "Traveling means dissolving into the lives of others, emerging forever changed—or sometimes, not returning at all."
 #+END_QUOTE
 
-StakeFocus
-[[file:app-release.apk][Download APK]]
+** StakeFocus
+StakeFocus is a productivity app I developed, that transforms your focus sessions by allowing you to stake Bitcoin as motivation. Set a timer, choose an amount to stake, and commit to distraction-free work - if you break focus by using other apps, you'll forfeit your staked Bitcoin. The app features a built-in Bitcoin wallet, session history tracking, and distraction blocking technology that prevents access to other applications during focus time. Earn points for completed sessions while building better focus habits with real financial incentives.
+[[file:app-release.apk][Download APK]] 
 
 *** my BTC address 
 bc1q4dk9xg4rtvhrdew0dxd3uhqny3xsk9nu5av2f8
