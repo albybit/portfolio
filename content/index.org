@@ -52,8 +52,8 @@ Chigago, Miami, New York, Wasghington, Houston
 "Traveling means dissolving into the lives of others, emerging forever changed—or sometimes, not returning at all."
 #+END_QUOTE
 
-
-[download]({{ site.baseurl }}{% ./app-release.apk %})
+StakeFocus
+[[file:app-release.apk][Download APK]]
 
 *** my BTC address 
 bc1q4dk9xg4rtvhrdew0dxd3uhqny3xsk9nu5av2f8
